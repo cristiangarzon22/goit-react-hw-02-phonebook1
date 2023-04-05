@@ -21,7 +21,7 @@ class ContactForm extends Component {
   
     if (existingContact) {
       const {name,number} = this.state;
-      alert(`${name} already exists in your contacts.`);
+      alert(`${name} with number ${number} already exists in your contacts.`);
       this.setState({name:''});
       this.setState({number:''});
       return;
